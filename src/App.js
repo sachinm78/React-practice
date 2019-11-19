@@ -16,7 +16,7 @@ function App() {
             <Card cardColor="red" />
             <Card cardColor="blue" />
             <Card cardColor="green" />
-        </
+        </>
     )
 }
 
