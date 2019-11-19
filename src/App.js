@@ -14,7 +14,7 @@ function App() {
         // note the word fragment can also be completely removed
         <>
             <Card cardColor="red" />
-            <Card cardColor="blue" />
+            <Card cardColor="yellow" />
             <Card cardColor="green" />
         </>
     )

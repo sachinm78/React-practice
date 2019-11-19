@@ -11,5 +11,9 @@ function Card(props) {
         <div style={styles}></div>
     )
 }
+// set default props
+Card.defaultProps = {
+    cardColor: "blue"
+}
 
 export default Card
