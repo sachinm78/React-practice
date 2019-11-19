@@ -13,7 +13,7 @@ function App() {
         // with fragments, wrap in <Fragment> </Fragment>
         // note the word fragment can also be completely removed
         <>
-            <Card cardColor="red" />
+            <Card cardColor="red" height={200} width={400} />
             <Card cardColor="yellow" />
             <Card cardColor="green" />
         </>
