@@ -1,5 +1,6 @@
 import React from "react"
 
+// written as a function
 function Card(props) {
     const styles = {
         backgroundColor: props.cardColor,
@@ -17,5 +18,26 @@ Card.defaultProps = {
     height: 100,
     width: 100
 }
+
+// written as a class
+// class Card extends React.Component {
+//     static defaultProps = {
+//         cardColor: "blue",
+//         height: 100,
+//         width: 100
+//     }
+    
+//     render() {
+//         const styles = {
+//             backgroundColor: this.props.cardColor,
+//             height: this.props.height,
+//             width: this.props.width
+//         }
+        
+//         return (
+//             <div style={styles}></div>
+//         )
+//     }
+// }
 
 export default Card
