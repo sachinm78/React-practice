@@ -3,11 +3,20 @@ import Card from "./Card"
 
 function App() {
     return (
-      <div>
-        <Card cardColor="red" />
-        <Card cardColor="blue" />
-        <Card cardColor="green" />
-      </div>
+              // without fragments
+        // <div>
+        //     <Card cardColor="red" />
+        //     <Card cardColor="blue" />
+        //     <Card cardColor="green" />
+        // </div>
+
+        // with fragments, wrap in <Fragment> </Fragment>
+        // note the word fragment can also be completely removed
+        <>
+            <Card cardColor="red" />
+            <Card cardColor="blue" />
+            <Card cardColor="green" />
+        </
     )
 }
 
