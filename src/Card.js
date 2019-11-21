@@ -31,6 +31,7 @@ Card.propTypes = {
 export default Card
 
 // MORE EXAMPLES
+// Reference: https://reactjs.org/docs/typechecking-with-proptypes.html#proptypes
 
 // written as a class
 // class Card extends React.Component {
