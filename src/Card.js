@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-// written as a function
+// written as a function (written as a class below)
 function Card(props) {
     const styles = {
         backgroundColor: props.cardColor,
@@ -20,12 +20,17 @@ Card.defaultProps = {
     width: 100
 }
 
-// set propType
+// set propType (more examples below)
+// note: isRequired isn't really doing much here because we also have default props
 Card.propTypes = {
-    cardColor: PropTypes.string,
+    cardColor: PropTypes.string.isRequired,
     height: PropTypes.number,
     width: PropTypes.number
 }
+
+export default Card
+
+// MORE EXAMPLES
 
 // written as a class
 // class Card extends React.Component {
@@ -48,4 +53,12 @@ Card.propTypes = {
 //     }
 // }
 
-export default Card
+// Scrimba's Challenges
+// Challenge: Add prop types for the height and width. Make at least one of them required.
+// Extra Challenge: Make it so your incoming cardColor is only valid if it is "blue" or "red".
+
+// Card.propTypes = {
+//     cardColor: PropTypes.oneOf(["red", "blue", "green", "yellow"]),
+//     height: PropTypes.number.isRequired,
+//     width: PropTypes.number
+// }
